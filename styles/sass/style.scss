@@ -1,0 +1,93 @@
+// Importing the Variables
+@import 'variables';
+// Importing the Mixins
+@import 'mixins';
+// Importing the functions
+@import 'functions';
+
+body{
+  background-color:$Main_bg_color;
+}
+header{
+  .top-header{
+    background-color:$Main_color;
+    color:$Main_bg_color;
+    .btn{
+      background-color:$Secondary_bg_color;
+      border-radius: 0%;
+      &:hover{
+        color:$Main_color;
+      }
+    }
+  }
+  .navbar{
+    font-family: $font_family;
+    .container{
+      .navbar-brand{
+          font-size: 30px;
+          font-weight: bolder;
+          color: $color_brand;
+        .logo{
+          color:$Main_color;
+        }
+      }
+      .navbar-collapse{
+        .nav-item{
+          padding: 5px;
+          .active{
+            color:$Main_color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+.hero{
+  width: 100%;
+  background-image: url('../images/students.webp');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .carousel-inner{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 450px;
+  }
+}
+// Welcome Section
+.welcome{
+  .header_welcome{
+    width: 50%;
+    margin: auto;
+  }
+  .content_welcome{
+    padding: 15px;
+    .fa-solid, .fas{
+      font-size: 34px;
+      padding: 10px;
+      margin: 10px;
+      color: $Main_color;
+    }
+  }
+}
+ 
+//popularOnlineCourses
+.popularOnlineCourses{
+  background-color: $Secondary_bg_color
+}
+
+
+// Comon attributes
+.popularOnlineCourses, .welcome{
+  text-align: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  p{
+    color: set_opacity($color_brand, 0.54);
+  }
+}
+// Importing the media queries
+@import "mediaQuery";

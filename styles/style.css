@@ -1,0 +1,94 @@
+body {
+  background-color: #FFFFFF;
+}
+
+header .top-header {
+  background-color: #27C4F1;
+  color: #FFFFFF;
+}
+header .top-header .btn {
+  background-color: rgba(248, 249, 250, 0.7215686275);
+  border-radius: 0%;
+}
+header .top-header .btn:hover {
+  color: #27C4F1;
+}
+header .navbar {
+  font-family: "Open Sans";
+}
+header .navbar .container .navbar-brand {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.59);
+}
+header .navbar .container .navbar-brand .logo {
+  color: #27C4F1;
+}
+header .navbar .container .navbar-collapse .nav-item {
+  padding: 5px;
+}
+header .navbar .container .navbar-collapse .nav-item .active {
+  color: #27C4F1;
+  text-decoration: underline;
+}
+
+.hero {
+  width: 100%;
+  background-image: url("../images/students.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero .carousel-inner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 450px;
+}
+
+.welcome .header_welcome {
+  width: 50%;
+  margin: auto;
+}
+.welcome .content_welcome {
+  padding: 15px;
+}
+.welcome .content_welcome .fa-solid, .welcome .content_welcome .fas {
+  font-size: 34px;
+  padding: 10px;
+  margin: 10px;
+  color: #27C4F1;
+}
+
+.popularOnlineCourses {
+  background-color: rgba(248, 249, 250, 0.7215686275);
+}
+
+.popularOnlineCourses, .welcome {
+  text-align: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+}
+.popularOnlineCourses p, .welcome p {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@media (max-width: 991.98px) {
+  .top-header .row .col-12 {
+    text-align: center;
+  }
+  .welcome .header_welcome {
+    width: 100%;
+    margin: 0%;
+  }
+  .welcome .header_welcome h2 {
+    font-size: 20px;
+  }
+  .welcome .content_welcome .fa-solid, .welcome .content_welcome .fas {
+    font-size: 20px;
+  }
+  .welcome .content_welcome h3, .welcome .content_welcome p {
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=style.css.map */
