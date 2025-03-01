@@ -26,6 +26,27 @@
       }
     }
   }
+  .popularOnlineCourses{
+    background-color: $Secondary_bg_color;
+    padding:35px;
+    .cards{
+      .card{
+        margin: 5px;
+        .card-img-top{
+          height: 180px;
+        }
+        .card-text{
+          font-size: 14px;
+        }
+        .btn{
+          font-size: 14px;
+        }
+      }
+    }
+    .footer_pop .btn{
+      margin: 13px;
+    }
+  }
 }
 // `xl` applies to large devices (desktops, less than 1200px)
 // @media (max-width: 1199.98px) { ... }

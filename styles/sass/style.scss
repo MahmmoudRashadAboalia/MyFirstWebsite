@@ -58,6 +58,7 @@ header{
 }
 // Welcome Section
 .welcome{
+  height: 450px;
   .header_welcome{
     width: 50%;
     margin: auto;
@@ -72,22 +73,92 @@ header{
     }
   }
 }
+
  
 //popularOnlineCourses
 .popularOnlineCourses{
-  background-color: $Secondary_bg_color
+  background-color: $Secondary_bg_color;
+  padding:35px;
+  .cards{
+    justify-content: space-around;
+    margin: 0%;
+    .card{
+      border: none;
+      margin-bottom: 15px;
+      padding: 0px;
+    }
+  }
 }
 
 
 // Comon attributes
 .popularOnlineCourses, .welcome{
   text-align: center;
-  height: 450px;
   display: flex;
   align-items: center;
   p{
     color: set_opacity($color_brand, 0.54);
   }
 }
+// register
+.register {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  background: linear-gradient(rgba($Main_color, 0.7), rgba($Main_bg_color, 0.9)), 
+              url('../images/register.webp') center/cover no-repeat;
+  .register_content {
+    color: $Secondary_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .stats-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .stat-item {
+        text-align: center;
+        color: white;
+        .number {
+          font-size: 40px;
+          font-weight: bold;
+          color: #29abe2; /* اللون الأزرق */
+      }    
+        .text {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+    }
+    .divider {
+      width: 1px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.5);
+      transform: rotate(20deg);
+  }
+  }
+  }
+  .register_form {  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 100%;
+      width: 70%;
+      margin: auto;
+      background-color: $Secondary_color;
+    }
+    input, button {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+}
+
 // Importing the media queries
 @import "mediaQuery";

@@ -72,6 +72,20 @@ This project for any other project & do not reapeat the same steps in other proj
                   span
                   p
                   icons
+-   **Register**
+      div.register_content col-6
+            h1 >> Register Now
+            p
+            div >>
+                  4 span
+      div.register_form col-6
+            form
+                  your name
+                  phone
+                  choose subject
+                  message
+                  button submit now
+
 -   **Footer**
 # Colors
       **Main_color:#27C4F1

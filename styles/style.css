@@ -1,13 +1,14 @@
+@charset "UTF-8";
 body {
-  background-color: #FFFFFF;
+  background-color: #e3cfcf;
 }
 
 header .top-header {
   background-color: #27C4F1;
-  color: #FFFFFF;
+  color: #e3cfcf;
 }
 header .top-header .btn {
-  background-color: rgba(248, 249, 250, 0.7215686275);
+  background-color: rgba(199, 208, 217, 0.7215686275);
   border-radius: 0%;
 }
 header .top-header .btn:hover {
@@ -46,6 +47,9 @@ header .navbar .container .navbar-collapse .nav-item .active {
   height: 450px;
 }
 
+.welcome {
+  height: 450px;
+}
 .welcome .header_welcome {
   width: 50%;
   margin: auto;
@@ -61,17 +65,82 @@ header .navbar .container .navbar-collapse .nav-item .active {
 }
 
 .popularOnlineCourses {
-  background-color: rgba(248, 249, 250, 0.7215686275);
+  background-color: rgba(199, 208, 217, 0.7215686275);
+  padding: 35px;
+}
+.popularOnlineCourses .cards {
+  justify-content: space-around;
+  margin: 0%;
+}
+.popularOnlineCourses .cards .card {
+  border: none;
+  margin-bottom: 15px;
+  padding: 0px;
 }
 
 .popularOnlineCourses, .welcome {
   text-align: center;
-  height: 450px;
   display: flex;
   align-items: center;
 }
 .popularOnlineCourses p, .welcome p {
   color: rgba(0, 0, 0, 0.54);
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  background: linear-gradient(rgba(39, 196, 241, 0.7), rgba(227, 207, 207, 0.9)), url("../images/register.webp") center/cover no-repeat;
+}
+.register .register_content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register .register_content .stats-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.register .register_content .stats-container .stat-item {
+  text-align: center;
+  color: white;
+}
+.register .register_content .stats-container .stat-item .number {
+  font-size: 40px;
+  font-weight: bold;
+  color: #29abe2; /* اللون الأزرق */
+}
+.register .register_content .stats-container .stat-item .text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.register .register_content .stats-container .divider {
+  width: 1px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: rotate(20deg);
+}
+.register .register_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  background-color: white;
+}
+.register .register_form input, .register .register_form button {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 @media (max-width: 991.98px) {
@@ -90,5 +159,24 @@ header .navbar .container .navbar-collapse .nav-item .active {
   }
   .welcome .content_welcome h3, .welcome .content_welcome p {
     font-size: 17px;
+  }
+  .popularOnlineCourses {
+    background-color: rgba(199, 208, 217, 0.7215686275);
+    padding: 35px;
+  }
+  .popularOnlineCourses .cards .card {
+    margin: 5px;
+  }
+  .popularOnlineCourses .cards .card .card-img-top {
+    height: 180px;
+  }
+  .popularOnlineCourses .cards .card .card-text {
+    font-size: 14px;
+  }
+  .popularOnlineCourses .cards .card .btn {
+    font-size: 14px;
+  }
+  .popularOnlineCourses .footer_pop .btn {
+    margin: 13px;
   }
 }/*# sourceMappingURL=style.css.map */
